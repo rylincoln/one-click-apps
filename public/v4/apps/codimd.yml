@@ -24,7 +24,7 @@ services:
             PGID: 1000
             PUID: 1000
             TZ: $$cap_timezone
-        image: linuxserver/codimd:1.6.0-ls44
+        image: hackmdio/hackmd:2.3.2
         restart: always
         volumes:
             - $$cap_appname-config:/config
@@ -47,8 +47,8 @@ caproverOneClickApp:
             GitHub: https://github.com/hackmdio/codimd
         end: |-
             Aaaand you're done! 😄
-
-            Your service is available as $$cap_appname
+            
+            Your service is available as $$cap_appname you can create a new user in the web ui.
     displayName: CodiMD
     isOfficial: true
     description: Realtime collaborative Markdown notes on all platforms
